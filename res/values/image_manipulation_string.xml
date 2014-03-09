@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pen_start_button">"画笔"</string>
+    <string name="cut_off_start_button">"图形"</string>
+</resources>

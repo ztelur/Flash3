@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <color name="app_name_color">#FF0000</color>
+      <color name="app_name_shadow_color">#FFFFFF</color>
+       <color name="pen_color">#FF0000</color>
+</resources>
