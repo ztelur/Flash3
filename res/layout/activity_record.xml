@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RecordActivity" >
+    <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/record_button"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_alignParentLeft="true">
+
+        <requestFocus />
+    </EditText>
+    <Button
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放录音"
+            android:layout_below="@id/editText1"
+            android:layout_alignRight="@id/editText1"/>
+
+    <com.example.Flash.time_capsule.RecordButton
+            android:id="@id/record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录音" android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/play_button"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/dateTextView"
+        android:layout_alignParentTop="true"/>
+
+
+
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="未设置提醒的日期时间，点击此处设置"
+            android:id="@+id/dateTextView"
+            android:layout_above="@id/editText1"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:height="80dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"/>
+
+</RelativeLayout>

@@ -1,7 +1,6 @@
 package com.nju.Flash.image_manipulation;
 
-import android.app.Activity;
-import android.app.AlertDialog;
+import android.app.*;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,14 +8,15 @@ import android.graphics.Color;
 import android.graphics.Matrix;
 import android.os.Bundle;
 
-import android.provider.MediaStore;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import com.nju.Flash.R;
+import com.nju.Flash.image_manipulation.MyLayout.SlidingLayout;
+import com.nju.Flash.image_manipulation.function_fragment.Function_fragment;
+import com.nju.Flash.image_manipulation.function_fragment.Pen_Function_Fragment;
 
 
 /**
@@ -31,12 +31,14 @@ public class Image_manipulation_main_activity extends Activity implements View.O
     //for test
     private MyManipulationView2 myView=null;
     //
+    private FragmentManager fragmentManager=null;
     private Intent photoUriIntent=null;//启动此activity的Intent,内有photo的地址信息
 	private LinearLayout LL_show=null;
     private Image photo=null;//要进行操作的图片
 	private boolean isBig=false;//图片是否大于屏幕分辨率
     private boolean isEraser=false;//
     //下边是activity的各个组件
+    private SlidingLayout slidingLayout=null;
     private ImageView showImageView=null;
     private Button pen_Start_Button=null;
     private Button cutoff_Start_Button=null;//
@@ -45,6 +47,10 @@ public class Image_manipulation_main_activity extends Activity implements View.O
     private Button saveButton=null;//保存
     private Button showButton=null;//显示
 
+    //////fragment
+    private Fragment pen_Function_Fragment=null;
+    private Fragment attri_Function_Fragment=null;
+
 	/**
 	 *
 	 * @param savedInstanceState
@@ -52,8 +58,9 @@ public class Image_manipulation_main_activity extends Activity implements View.O
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.image_handle_activity);
+		setContentView(R.layout.image_handle);
 		photoUriIntent=getIntent();
+        fragmentManager=getFragmentManager();
         init();
 		
 
@@ -65,21 +72,24 @@ public class Image_manipulation_main_activity extends Activity implements View.O
      * 处理整个activity的图片和按钮的初始化问题
      */
     private void init(){
+
         initMyView();
+        initSlideLayout();
+//        initFragment();
         initPhoto(photoUriIntent);
-        initButton();
+        initPenFunctionButton();
+
     }
-    private void initButton() {
-        pen_Start_Button=(Button)findViewById(R.id.pen_start_button);
-//        pen_Start_Button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                showImageView.setOnTouchListener(new Pen_Start_Button_Listener());
-//            }
-//        });
-        pen_Start_Button.setOnClickListener(this);
-        cutoff_Start_Button=(Button)findViewById(R.id.cut_off_start_button);
-        cutoff_Start_Button.setOnClickListener(this);
+//    private void initFragment() {
+//        FrameLayout frameLayout=
+//    }
+
+    /**
+     *
+     */
+    private void initSlideLayout() {
+        slidingLayout=(SlidingLayout)findViewById(R.id.slidingLayout);
+        slidingLayout.setScrollEvent(myView);
     }
 
 
@@ -122,35 +132,12 @@ public class Image_manipulation_main_activity extends Activity implements View.O
         photo.setActivity(this);
         photo.createPhoto(intent.getData());
         myView.setImageUri(photo.getUri());
-        //Toast.makeText(getApplicationContext(),photo.getPhotoName(),Toast.LENGTH_LONG).show();
-        //myView.editPicture(photo.getPhotoPath());
 
-
-
-
-
-//        showImageView=(ImageView)findViewById(R.id.image_handle_imageView);
-//        showImageView.setImageURI(photo.getUri());
     }
 
-	/**
-	 * 对于大于屏幕分辨率的照片进行缩放
-	 * @param bitmap    改变的图形
-	 * @param width      屏幕的宽
-	 * @param height	 屏幕的高
-	 * @return      Bitmap
-	 */
-	private Bitmap resizeBitmap (Bitmap bitmap,float width,float height) {
-		int w=bitmap.getWidth();
-		int h=bitmap.getHeight();
-
-		Matrix matrix=new Matrix();
-		float scaleWidth=((float)width/w);
-		float scaleHeight=((float)height/h);
-		matrix.postScale(scaleWidth,scaleHeight);
-		Bitmap bitmap1=Bitmap.createBitmap(bitmap,0,0,w,h,matrix,true);
-		return bitmap1;
-	}
+    /**
+     *
+     */
     private void initMyView() {
 
         //设置myview的属性
@@ -223,4 +210,46 @@ public class Image_manipulation_main_activity extends Activity implements View.O
 
         builder.create().show();
     }
+    public void setTabButton(Function_fragment function_fragment) {
+        // 每次选中之前先清楚掉上次的选中状态
+//        clearSelection();
+        switch (function_fragment) {
+            case pen_function: {
+                initPenFunctionButton();
+            }
+            case attribute_function: {
+                initAttributeFunctionButton();
+            }
+        }
+    }
+    private void initPenFunctionButton() {
+//        // 开启一个Fragment事务
+//        FragmentTransaction transaction = fragmentManager.beginTransaction();
+//
+//        // 先隐藏掉所有的Fragment，以防止有多个Fragment显示在界面上的情况
+//        if(pen_Function_Fragment==null) {
+//            pen_Function_Fragment=new Pen_Function_Fragment();
+//            transaction.add(R.id.content, pen_Function_Fragment);
+//        }
+        pen_Start_Button=(Button)findViewById(R.id.pen_start_button);
+
+        pen_Start_Button.setOnClickListener(this);
+        cutoff_Start_Button=(Button)findViewById(R.id.cut_off_start_button);
+//        cutoff_Start_Button.setOnClickListener(this);
+        cutoff_Start_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //实现点击一下menu展示左侧布局，再点击一下隐藏左侧布局的功能
+                if (slidingLayout.isLeftLayoutVisible()) {
+                    slidingLayout.scrollToRightLayout();
+                } else {
+                    slidingLayout.scrollToLeftLayout();
+                }
+            }
+        });
+    }
+    private void initAttributeFunctionButton() {
+
+    }
+
 }

@@ -23,26 +23,28 @@
                 <!--android:scaleType="centerInside" />-->
 
         </LinearLayout>
-    <LinearLayout
-            android:id="@+id/button_Layout_list"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            >
-        <Button
-                android:id="@+id/pen_start_button"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:text="@string/pen_start_button"/>
-        <Button
-                android:id="@+id/cut_off_start_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/cut_off_start_button"/>
-    </LinearLayout>
+        <!--<LinearLayout-->
+                <!--android:id="@+id/button_Layout_list"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!-->-->
+            <!--<Button-->
+                    <!--android:id="@+id/pen_start_button"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/pen_start_button"/>-->
+            <!--<Button-->
+                    <!--android:id="@+id/cut_off_start_button"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/cut_off_start_button"/>-->
+        <!--</LinearLayout>-->
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
 
+    </FrameLayout>
 
 
 

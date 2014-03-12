@@ -31,21 +31,21 @@ public class Time_capsule_main_activity extends Activity{
      * 初始化按钮
      */
     private void initButton() {
-//        take_photo_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent=new Intent();
-//                intent.setClass(Time_capsule_main_activity.this,RecordActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        watch_time_capsule_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent=new Intent();
-//                intent.setClass(Time_capsule_main_activity.this,ShowTimeCapsuleActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        take_photo_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Time_capsule_main_activity.this,RecordActivity.class);
+                startActivity(intent);
+            }
+        });
+        watch_time_capsule_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Time_capsule_main_activity.this,ShowTimeCapsuleActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
