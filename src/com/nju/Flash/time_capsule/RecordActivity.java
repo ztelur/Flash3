@@ -82,7 +82,6 @@ public class RecordActivity extends Activity {
 
     private void setRecordButton() {
         mRecordButton = (RecordButton) findViewById(R.id.record_button);
-        try {
         mRecordButton.setSavePath(Record.getInstance(this).getFilePath());
         mRecordButton.setOnFinishedRecordListener(new RecordButton.OnFinishedRecordListener() {
             @Override
@@ -90,11 +89,7 @@ public class RecordActivity extends Activity {
                 Log.i("RECORD!!!", "finished!!!!!!!!!! save to " + audioPath);
             }
         });
-        }catch (NullPointerException e) {
-            Toast.makeText(getApplicationContext(),"No mRecordButton",Toast.LENGTH_LONG).show();
-            e.printStackTrace();
-        }
-    }/////////////TODO:杨涛，我的版本上这边说是不是override
+    }
 
     private void initializeButtons() {
         setPlayButton();
@@ -236,7 +231,11 @@ public class RecordActivity extends Activity {
     }
 
     public void playListener(View target) {
-        Record.getInstance(this).play();
+        if(Record.getInstance(this).isPlaying()){
+            Record.getInstance(this).stop();
+        } else {
+            Record.getInstance(this).play();
+        }
     }
 
     protected void dialog() {
