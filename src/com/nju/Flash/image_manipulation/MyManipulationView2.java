@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import com.nju.Flash.image_manipulation.Draw.*;
-
+import com.nju.Flash.image_manipulation.tone_adjustment.Tone;
 
 import java.io.*;
 
@@ -20,6 +20,7 @@ public class MyManipulationView2 extends View {
 	private Point evevtPoint;
 	private Bitmap floorBitmap, surfaceBitmap;// �ײ�����bitmap
 	private Canvas floorCanvas, surfaceCanvas;// bitmap��Ӧ��canvas
+    private Context context;
 
 	private boolean isEraser = false;
 
@@ -28,6 +29,7 @@ public class MyManipulationView2 extends View {
 	@SuppressLint("ParserError")
 	public MyManipulationView2(Context context) {
 		super(context);
+        this.context = context;
 
         //初始化drawBS
 		drawBS = new DrawPath();
@@ -243,6 +245,20 @@ public class MyManipulationView2 extends View {
         try {
         Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContext().getContentResolver(), uri);
         floorBitmap=bitmap;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    Tone mToneLayer;
+    public void  toneChange(int flag){
+        floorBitmap = mToneLayer.handleImage(flag);
+    }
+
+    public void setToneAndPhoto( Tone tone, Uri photoUri){
+        mToneLayer = tone;
+        try {
+            mToneLayer.initBaseBitmap(floorBitmap);
         } catch (Exception e) {
             e.printStackTrace();
         }

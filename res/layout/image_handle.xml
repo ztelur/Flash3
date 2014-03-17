@@ -28,7 +28,6 @@
                                   />
             </LinearLayout>
 
-
         <RelativeLayout
 
                         android:layout_width="fill_parent"
@@ -70,12 +69,18 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/cut_off_start_button"/>
+
             </LinearLayout>
             <FrameLayout
                     android:id="@+id/content"
                     android:layout_width="fill_parent" android:layout_height="wrap_content">
 
             </FrameLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tone_view"
+                    android:layout_above="@+id/button_Layout_list"/>
         </RelativeLayout>
     </com.nju.Flash.image_manipulation.MyLayout.SlidingLayout>
 </LinearLayout>
