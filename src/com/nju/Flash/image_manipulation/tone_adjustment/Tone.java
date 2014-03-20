@@ -197,6 +197,7 @@ public class Tone {
      * @param flag 比特位0 表示是否改变色相，比位1表示是否改变饱和度,比特位2表示是否改变明亮度
      */
     Bitmap resultBitmap;
+
     public Bitmap handleImage(int flag) {
         Log.i("Tone_Test", "handle image function action, flag = " + flag + " mHueValue = " +
                 mHueValue + " mSaturationValue = " + mSaturationValue + " mLumValue = " + mLumValue);

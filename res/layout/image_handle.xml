@@ -28,17 +28,17 @@
                                   />
             </LinearLayout>
 
+
         <RelativeLayout
 
                         android:layout_width="fill_parent"
-                        android:layout_height="fill_parent">
-
-
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10px">
 
 
             <LinearLayout
                     android:id="@+id/ll_show"
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
 
@@ -51,36 +51,33 @@
                 <!--android:scaleType="centerInside" />-->
 
             </LinearLayout>
-            <LinearLayout
-                    android:id="@+id/button_Layout_list"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    >
-                <Button
-                        android:id="@+id/pen_start_button"
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/pen_start_button"/>
-                <Button
-                        android:id="@+id/cut_off_start_button"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cut_off_start_button"/>
-
-            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:id="@+id/button_Layout_list"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!-->-->
+            <!--<Button-->
+            <!--android:id="@+id/pen_start_button"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/pen_start_button"/>-->
+            <!--<Button-->
+            <!--android:id="@+id/cut_off_start_button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/cut_off_start_button"/>-->
+            <!--</LinearLayout>-->
             <FrameLayout
                     android:id="@+id/content"
-                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
 
             </FrameLayout>
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tone_view"
-                    android:layout_above="@+id/button_Layout_list"/>
+
         </RelativeLayout>
     </com.nju.Flash.image_manipulation.MyLayout.SlidingLayout>
 </LinearLayout>
