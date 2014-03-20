@@ -2,14 +2,18 @@ package com.nju.Flash.image_manipulation;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.*;
 import android.net.Uri;
+import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 import com.nju.Flash.image_manipulation.Draw.*;
 import com.nju.Flash.image_manipulation.tone_adjustment.Tone;
+
 
 import java.io.*;
 
@@ -20,7 +24,6 @@ public class MyManipulationView2 extends View {
 	private Point evevtPoint;
 	private Bitmap floorBitmap, surfaceBitmap;// �ײ�����bitmap
 	private Canvas floorCanvas, surfaceCanvas;// bitmap��Ӧ��canvas
-    private Context context;
 
 	private boolean isEraser = false;
 
@@ -29,7 +32,6 @@ public class MyManipulationView2 extends View {
 	@SuppressLint("ParserError")
 	public MyManipulationView2(Context context) {
 		super(context);
-        this.context = context;
 
         //初始化drawBS
 		drawBS = new DrawPath();
@@ -250,12 +252,25 @@ public class MyManipulationView2 extends View {
         }
     }
 
+    public void setImage(Intent intent) {
+//        Bundle extras=intent.getExtras();
+        try {
+            Toast.makeText(getContext(), "dddd", Toast.LENGTH_LONG).show();
+            //if()
+            floorBitmap = (Bitmap) intent.getParcelableExtra("image");
+        } catch (Exception e) {
+
+            e.printStackTrace();
+        }
+    }
+
     Tone mToneLayer;
-    public void  toneChange(int flag){
+
+    public void toneChange(int flag) {
         floorBitmap = mToneLayer.handleImage(flag);
     }
 
-    public void setToneAndPhoto( Tone tone, Uri photoUri){
+    public void setToneAndPhoto(Tone tone, Uri photoUri) {
         mToneLayer = tone;
         try {
             mToneLayer.initBaseBitmap(floorBitmap);

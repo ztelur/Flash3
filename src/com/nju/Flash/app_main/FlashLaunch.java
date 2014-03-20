@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 
 import com.nju.Flash.R;
+import com.nju.Flash.image_manipulation.ImageOperationTypeActivity;
 import com.nju.Flash.image_manipulation.Image_manipulation_main_activity;
 import com.nju.Flash.time_capsule.Time_capsule_main_activity;
 
@@ -39,12 +40,15 @@ public class FlashLaunch extends Activity {
 		image_handle_button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				Intent intent = new Intent(Intent.ACTION_PICK, null);
-				intent.setDataAndType(
-						MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-						"image/*");
-				startActivityForResult(intent, select_pic_from_sys_request_code);
-			}
+//				Intent intent = new Intent(Intent.ACTION_PICK, null);
+//				intent.setDataAndType(
+//						MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+//						"image/*");
+//				startActivityForResult(intent, select_pic_from_sys_request_code);
+                Intent intent = new Intent();
+                intent.setClass(FlashLaunch.this, ImageOperationTypeActivity.class);
+                startActivity(intent);
+            }
 
 		});
 

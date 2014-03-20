@@ -13,7 +13,19 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cf1d6c9-3040-45b6-8991-d8017c8cfb37" name="Default" comment="">
+    <list default="true" id="1cf1d6c9-3040-45b6-8991-d8017c8cfb37" name="Default" comment="整合了从照相机拍照到编辑界面和关于色调等属性调节功能的版本。&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/IOHelper.java" afterPath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/IOHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Photo.java" afterPath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Photo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Record.java" afterPath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Record.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java" afterPath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordButton.java" afterPath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/ShowTimeCapsuleActivity.java" afterPath="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/ShowTimeCapsuleActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_record.xml" afterPath="$PROJECT_DIR$/res/layout/activity_record.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/titlebar.xml" afterPath="$PROJECT_DIR$/res/layout/titlebar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/titlebar2.xml" afterPath="$PROJECT_DIR$/res/layout/titlebar2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Flash.iws" />
@@ -69,7 +81,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java" line="52" class="com.nju.Flash.time_capsule.RecordActivity" package="com.nju.Flash.time_capsule">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -79,28 +107,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Image_manipulation_main_activity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/Image_manipulation_main_activity.java">
+      <file leaf-file-name="pen_function_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/pen_function_layout.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="264" column="0" selection-start="7226" selection-end="7226" vertical-scroll-proportion="0.0" vertical-offset="5362" max-vertical-offset="7150">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tone.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/tone_adjustment/Tone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="260" column="0" selection-start="7889" selection-end="7889" vertical-scroll-proportion="0.0" vertical-offset="5537" max-vertical-offset="6425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image_handle.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/image_handle.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="60" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0" vertical-offset="1442" max-vertical-offset="2275">
+            <state line="21" column="14" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -109,24 +119,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_handle_activity.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/image_handle_activity.xml">
-          <provider editor-type-id="text-editor">
-            <state line="17" column="48" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1425">
+      <file leaf-file-name="Attribute_Function_Fragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Attribute_Function_Fragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="36" selection-start="2065" selection-end="2065" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2400">
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
+        </entry>
+      </file>
+      <file leaf-file-name="Tone.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/tone_adjustment/Tone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="135" column="42" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.0" vertical-offset="3375" max-vertical-offset="6775">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image_handle.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/image_handle.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="23" selection-start="3445" selection-end="3445" vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="2200">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyManipulationView2.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/MyManipulationView2.java">
+      <file leaf-file-name="FlashLaunch.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/app_main/FlashLaunch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="259" column="129" selection-start="5937" selection-end="5937" vertical-scroll-proportion="1.0478632" vertical-offset="5587" max-vertical-offset="6550">
+            <state line="86" column="80" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.0" vertical-offset="2150" max-vertical-offset="3000">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="92" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.36014625" vertical-offset="453" max-vertical-offset="1250">
+              <folding>
+                <element signature="e#287#305#0" expanded="true" />
+                <element signature="e#534#552#0" expanded="true" />
+                <element signature="e#1449#1467#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="41" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="6075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_record.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_record.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="126" selection-start="1144" selection-end="1144" vertical-scroll-proportion="11.963636" vertical-offset="1308" max-vertical-offset="1800">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -138,15 +200,12 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="SYNC_SETTING" value="DONT" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/values/string.xml" />
         <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/Draw/DrawBS.java" />
-        <option value="$PROJECT_DIR$/src/com/nju/Flash/app_main/FlashLaunch.java" />
         <option value="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/IOHelper.java" />
         <option value="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Record.java" />
         <option value="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/ShowTimeCapsuleActivity.java" />
@@ -156,21 +215,27 @@
         <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/MyLayout/SlidingLayout.java" />
         <option value="$PROJECT_DIR$/res/layout/fragment_layout/pen_function_layout.xml" />
         <option value="$PROJECT_DIR$/res/layout/pen_function_layout.xml" />
+        <option value="$PROJECT_DIR$/res/layout/image_handle_activity.xml" />
         <option value="$PROJECT_DIR$/res/values/image_manipulation_string.xml" />
         <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/function_fragment.java" />
+        <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/FragmentButtonListener.java" />
+        <option value="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/res/values/border1.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/border1.xml" />
+        <option value="$PROJECT_DIR$/res/values/string.xml" />
+        <option value="$PROJECT_DIR$/res/layout/imageoperationtypeactivitylayout.xml" />
+        <option value="$PROJECT_DIR$/res/layout/image_operation_type_activity_layout.xml" />
+        <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/ImageOperationTypeActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Pen_Function_Fragment.java" />
         <option value="$PROJECT_DIR$/res/layout/attribute_function_layout.xml" />
         <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Attribute_Function_Fragment.java" />
-        <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/FragmentButtonListener.java" />
-        <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Pen_Function_Fragment.java" />
-        <option value="$PROJECT_DIR$/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/activity_record.xml" />
-        <option value="$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/image_handle_activity.xml" />
-        <option value="$PROJECT_DIR$/res/layout/image_handle.xml" />
         <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/Image_manipulation_main_activity.java" />
-        <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/tone_adjustment/Tone.java" />
+        <option value="$PROJECT_DIR$/res/layout/image_handle.xml" />
         <option value="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/MyManipulationView2.java" />
+        <option value="$PROJECT_DIR$/src/com/nju/Flash/app_main/FlashLaunch.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_record.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -187,7 +252,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -206,6 +271,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,7 +286,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flash3" />
+              <option name="myItemId" value="Flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -230,7 +296,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flash3" />
+              <option name="myItemId" value="Flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -241,10 +307,6 @@
               <option name="myItemId" value="Flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="time_capsule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -252,7 +314,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flash3" />
+              <option name="myItemId" value="Flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -274,7 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flash3" />
+              <option name="myItemId" value="Flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -285,6 +347,14 @@
               <option name="myItemId" value="Flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image_manipulation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tone_adjustment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -292,7 +362,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flash3" />
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image_manipulation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="function_fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -306,7 +424,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flash3" />
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -318,10 +454,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,28 +502,30 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="preferences.sourceCode.XML" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Flash" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_Nexus_S_by_Google2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="AndroidTargetDevices" value="192.168.56.101:5555" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="LayoutCode.rearrangeEntriesXML" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/tone_adjustment" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/res/layout" />
       <recent name="$PROJECT_DIR$/res/values" />
       <recent name="$PROJECT_DIR$/res/menu" />
-      <recent name="$PROJECT_DIR$/res/drawable" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.Flash">
@@ -390,6 +563,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -415,19 +601,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -490,7 +663,7 @@
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="AVD_for_Nexus_S_by_Google" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -533,7 +706,6 @@
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
     <option name="IGNORE_EXTERNALS" value="false" />
-    <configuration useDefault="true">C:\Users\杨涛\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -547,40 +719,56 @@
       <updated>1394629292617</updated>
     </task>
     <task id="LOCAL-00002" summary="14.3.12 from randy using for the basic code&#10;">
-      <created>1395056623694</created>
-      <updated>1395056623694</updated>
+      <created>1394699941725</created>
+      <updated>1394699941725</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="整合了从照相机拍照到编辑界面和关于色调等属性调节功能的版本。&#10;">
+      <created>1395279386577</created>
+      <updated>1395279386577</updated>
+    </task>
+    <task id="LOCAL-00004" summary="整合了从照相机拍照到编辑界面和关于色调等属性调节功能的版本。&#10;">
+      <created>1395279561007</created>
+      <updated>1395279561007</updated>
+    </task>
+    <task id="LOCAL-00005" summary="整合了从照相机拍照到编辑界面和关于色调等属性调节功能的版本。&#10;">
+      <created>1395279682703</created>
+      <updated>1395279682703</updated>
+    </task>
+    <task id="LOCAL-00006" summary="整合了从照相机拍照到编辑界面和关于色调等属性调节功能的版本。&#10;">
+      <created>1395280312726</created>
+      <updated>1395280312726</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289777" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41614908" sideWeight="0.4458109" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.47194466" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28944504" sideWeight="0.5541891" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34276387" sideWeight="0.5541891" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28073993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861805" sideWeight="0.52805537" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289777" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39906833" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -589,13 +777,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -608,8 +796,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4363354" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -626,7 +814,9 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="14.3.12 from randy using for the basic code&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="14.3.12 from randy using for the basic code&#10;" />
+    <MESSAGE value="整合了从照相机拍照到编辑界面和关于色调等属性调节功能的版本。&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合了从照相机拍照到编辑界面和关于色调等属性调节功能的版本。&#10;" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -636,33 +826,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="6552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/image_handle_activity_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="312" />
+        <state line="6" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="312">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Time_capsule_main_activity.java">
@@ -707,23 +875,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/string.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="-2.88" vertical-offset="0" max-vertical-offset="384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/image_handle_activity_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="312" />
+        <state line="6" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="312">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
@@ -738,17 +894,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/nju/Flash/BuildConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312" />
+        <state line="5" column="19" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/Draw/DrawBS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/app_main/FlashLaunch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="13" selection-start="1865" selection-end="1865" vertical-scroll-proportion="3.641791" vertical-offset="0" max-vertical-offset="2616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/nju/Flash/Manifest.java">
@@ -766,6 +919,16 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Photo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="-0.96682465" vertical-offset="504" max-vertical-offset="1416" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409">
@@ -780,7 +943,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/record.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/titlebar2.xml">
@@ -812,29 +977,14 @@
         <state line="111" column="0" selection-start="2330" selection-end="2330" vertical-scroll-proportion="0.0" vertical-offset="2562" max-vertical-offset="8496" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/attribute_function_layout.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/ShowTimeCapsuleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="643" selection-end="643" vertical-scroll-proportion="-4.0555553" vertical-offset="93" max-vertical-offset="456">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Attribute_Function_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="600" />
+        <state line="31" column="58" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1488" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Time_capsule_main_activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="21" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1104" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Function_fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="168" selection-end="168" vertical-scroll-proportion="0.41618496" vertical-offset="0" max-vertical-offset="346" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/time_capsule_main_activity.xml">
@@ -854,11 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/FragmentButtonListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9" selection-start="691" selection-end="691" vertical-scroll-proportion="1.1756756" vertical-offset="180" max-vertical-offset="744" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_time_cpasule.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="33" selection-start="419" selection-end="419" vertical-scroll-proportion="0.56692916" vertical-offset="72" max-vertical-offset="552">
@@ -869,19 +1014,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Pen_Function_Fragment.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="592" selection-end="592" vertical-scroll-proportion="0.3699422" vertical-offset="304" max-vertical-offset="1224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/pen_function_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="571" selection-end="571" vertical-scroll-proportion="0.49315068" vertical-offset="216" max-vertical-offset="648">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+        <state line="30" column="5" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0" vertical-offset="3024" max-vertical-offset="5352" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
@@ -891,16 +1026,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1250">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_record.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/image_handle_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="156" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="1800">
+        <state line="45" column="0" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.114754096" vertical-offset="1045" max-vertical-offset="1368">
           <folding />
         </state>
       </provider>
@@ -908,44 +1043,23 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Record.java">
+    <entry file="file://$PROJECT_DIR$/res/drawable/border1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="289" selection-end="289" vertical-scroll-proportion="-1.3715415" vertical-offset="944" max-vertical-offset="1750">
+        <state line="7" column="7" selection-start="299" selection-end="299" vertical-scroll-proportion="0.502994" vertical-offset="0" max-vertical-offset="336">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/ShowTimeCapsuleActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/values/string.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="29" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="1550">
+        <state line="12" column="12" selection-start="484" selection-end="484" vertical-scroll-proportion="0.7185629" vertical-offset="48" max-vertical-offset="432">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0" vertical-offset="3024" max-vertical-offset="5352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="29" selection-start="2302" selection-end="2314" vertical-scroll-proportion="0.0" vertical-offset="1038" max-vertical-offset="5400">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/Photo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="64" selection-start="1171" selection-end="1171" vertical-scroll-proportion="1.3472669" vertical-offset="137" max-vertical-offset="1475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/image_handle_activity.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/image_operation_type_activity_layout.xml">
       <provider editor-type-id="text-editor">
-        <state line="17" column="48" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1425">
+        <state line="3" column="6" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="552">
           <folding />
         </state>
       </provider>
@@ -953,9 +1067,23 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/image_handle.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/FragmentButtonListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="60" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0" vertical-offset="1442" max-vertical-offset="2275">
+        <state line="22" column="9" selection-start="691" selection-end="691" vertical-scroll-proportion="0.66106445" vertical-offset="244" max-vertical-offset="696">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Function_fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="168" selection-end="168" vertical-scroll-proportion="0.40336135" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/attribute_function_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="42" selection-start="458" selection-end="458" vertical-scroll-proportion="-4.4444447" vertical-offset="0" max-vertical-offset="456">
           <folding />
         </state>
       </provider>
@@ -963,27 +1091,194 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Pen_Function_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="3975" selection-end="3975" vertical-scroll-proportion="0.0" vertical-offset="1176" max-vertical-offset="2760">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/Image_manipulation_main_activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="0" selection-start="7226" selection-end="7226" vertical-scroll-proportion="0.0" vertical-offset="6393" max-vertical-offset="7775">
+        <state line="93" column="0" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="2034" max-vertical-offset="7464">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getPhoto#0;class#Image_manipulation_main_activity#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/MyManipulationView2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="276" column="30" selection-start="6396" selection-end="6396" vertical-scroll-proportion="0.0" vertical-offset="3764" max-vertical-offset="6552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/ImageOperationTypeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="35" selection-start="3430" selection-end="3430" vertical-scroll-proportion="2.0128205" vertical-offset="1111" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/pen_function_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="14" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="648">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/function_fragment/Attribute_Function_Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="36" selection-start="2065" selection-end="2065" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1968">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/tone_adjustment/Tone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="260" column="0" selection-start="7889" selection-end="7889" vertical-scroll-proportion="0.0" vertical-offset="5803" max-vertical-offset="6425">
+        <state line="135" column="42" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.0" vertical-offset="1488" max-vertical-offset="6192">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/image_manipulation/MyManipulationView2.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/image_handle.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="259" column="129" selection-start="5937" selection-end="5937" vertical-scroll-proportion="1.0478632" vertical-offset="5587" max-vertical-offset="6550">
+        <state line="78" column="23" selection-start="3445" selection-end="3445" vertical-scroll-proportion="0.0" vertical-offset="1872" max-vertical-offset="2112">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/app_main/FlashLaunch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="80" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="2375">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nju/Flash/time_capsule/RecordActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="41" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="6075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_record.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="126" selection-start="1144" selection-end="1144" vertical-scroll-proportion="11.963636" vertical-offset="1308" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="92" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.36014625" vertical-offset="453" max-vertical-offset="1250">
+          <folding>
+            <element signature="e#287#305#0" expanded="true" />
+            <element signature="e#534#552#0" expanded="true" />
+            <element signature="e#1449#1467#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Flash</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Android API 17 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
