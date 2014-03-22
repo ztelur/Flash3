@@ -26,6 +26,12 @@
                                    android:layout_height="wrap_content"
                                    android:text="@string/attribute_change_fragment_button"
                                   />
+                <Button
+                        android:id="@+id/conversion_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="图片转换"
+                        />
             </LinearLayout>
 
 
