@@ -3,25 +3,23 @@ package com.nju.Flash.image_manipulation;
 import android.app.*;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.graphics.Matrix;
 import android.os.Bundle;
-
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.*;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 import com.nju.Flash.R;
 import com.nju.Flash.image_manipulation.MyLayout.SlidingLayout;
 import com.nju.Flash.image_manipulation.function_fragment.Attribute_Function_Fragment;
+import com.nju.Flash.image_manipulation.function_fragment.ConversionFragment;
 import com.nju.Flash.image_manipulation.function_fragment.Function_fragment;
 import com.nju.Flash.image_manipulation.function_fragment.Pen_Function_Fragment;
-import com.nju.Flash.image_manipulation.tone_adjustment.Tone;
-
-import java.util.ArrayList;
 
 
 /**
@@ -55,6 +53,7 @@ public class Image_manipulation_main_activity
 
     //////fragment
     private Fragment pen_Function_Fragment=null;
+    private Fragment conversionFragment = null;
     private Fragment attri_Function_Fragment=null;
     //记录当前fragment的类型
     private Function_fragment current_Fragment = Function_fragment.pen_function;
@@ -62,6 +61,7 @@ public class Image_manipulation_main_activity
     //slideLayout button
     private Button pen_Function_Button;
     private Button attribute_Function_Button;
+    private Button conversionButton;
 
     /**
 	 *
@@ -91,6 +91,7 @@ public class Image_manipulation_main_activity
         initSlideButton();
         initPhoto(photoUriIntent);
         initPenFunctionButton();
+        initConversionButton();
 
 
     }
@@ -119,6 +120,13 @@ public class Image_manipulation_main_activity
             @Override
             public void onClick(View view) {
                 Image_manipulation_main_activity.this.initAttributeFunctionButton();
+            }
+        });
+        conversionButton = (Button) findViewById(R.id.conversion_button);
+        conversionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Image_manipulation_main_activity.this.initConversionButton();
             }
         });
     }
@@ -313,4 +321,12 @@ public class Image_manipulation_main_activity
     }
 
 
+    private void initConversionButton() {
+        // 开启一个Fragment事务
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        // 先隐藏掉所有的Fragment，以防止有多个Fragment显示在界面上的情况
+        conversionFragment = new ConversionFragment(this);
+        transaction.replace(R.id.content, conversionFragment);
+        transaction.commit();
+    }
 }

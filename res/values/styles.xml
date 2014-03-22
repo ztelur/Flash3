@@ -15,7 +15,7 @@
         <item name="android:background">#2abbff</item>
     </style>
 
-    <style name="CostomTitle" parent="android:Theme.Light">
+    <style name="CustomTitle" parent="android:Theme.Light">
         <item name="android:windowTitleSize">50dp</item>
         <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
     </style>

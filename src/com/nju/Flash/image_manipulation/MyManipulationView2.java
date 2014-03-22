@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.*;
 import android.net.Uri;
-import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -13,7 +12,6 @@ import android.view.View;
 import android.widget.Toast;
 import com.nju.Flash.image_manipulation.Draw.*;
 import com.nju.Flash.image_manipulation.tone_adjustment.Tone;
-
 
 import java.io.*;
 
@@ -277,6 +275,14 @@ public class MyManipulationView2 extends View {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public Bitmap getFloorBitmap(){
+        return floorBitmap;
+    }
+
+    public void setFloorBitmap(Bitmap bitmap){
+        floorBitmap = bitmap;
     }
 
 }
