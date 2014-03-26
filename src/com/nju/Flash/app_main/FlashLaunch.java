@@ -1,24 +1,18 @@
 package com.nju.Flash.app_main;
 
 import android.app.Activity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
-
 import android.os.Bundle;
-import android.provider.MediaStore;
-
 import android.view.View;
 import android.widget.Button;
-
 import android.widget.Toast;
-
-
 import com.nju.Flash.R;
 import com.nju.Flash.image_manipulation.ImageOperationTypeActivity;
 import com.nju.Flash.image_manipulation.Image_manipulation_main_activity;
-import com.nju.Flash.time_capsule.Time_capsule_main_activity;
+import com.nju.Flash.time_capsule.TimeCapsuleActivity;
+import com.nju.Flash.time_capsule.TimeCapsuleService;
 
 public class FlashLaunch extends Activity {
 	private static final  int select_pic_from_sys_request_code=1;
@@ -27,6 +21,9 @@ public class FlashLaunch extends Activity {
 
 	private Button image_handle_button=null;
 	private Button time_capsule_button=null;
+
+    //时间胶囊服务
+    public static Intent timeServiceIntent;
 	/**
 	 * Called when the activity is first created.
 	 */
@@ -34,6 +31,8 @@ public class FlashLaunch extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+        timeServiceIntent = new Intent(this, TimeCapsuleService.class);
+        startService(timeServiceIntent);
 
 		//处理图片的按钮
 		image_handle_button=(Button)findViewById(R.id.launch_image_handle_button);
@@ -58,7 +57,7 @@ public class FlashLaunch extends Activity {
 			@Override
 			public void onClick(View view) {
 				Intent intent=new Intent();
-				intent.setClass(FlashLaunch.this, Time_capsule_main_activity.class);
+				intent.setClass(FlashLaunch.this, TimeCapsuleActivity.class);
 				startActivity(intent);
 			}
 		});

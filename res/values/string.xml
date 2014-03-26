@@ -3,7 +3,7 @@
     <!--以下是FlashLaunch中的所需的string数值-->
 
     <string name="image_handle_button_text">"编辑图片"</string>
-    <string name="time_capsule_button_text">"时间胶囊"</string>
+    <string name="time_capsule_button_text">"建立/编辑时间胶囊"</string>
     <string name="label_bang_button_text">"查看分类图片"</string>
 
     <string name="app_help_menu_text">"帮助"</string>

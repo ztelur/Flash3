@@ -266,6 +266,7 @@ public class MyManipulationView2 extends View {
 
     public void toneChange(int flag) {
         floorBitmap = mToneLayer.handleImage(flag);
+        refresh();
     }
 
     public void setToneAndPhoto(Tone tone, Uri photoUri) {
@@ -285,4 +286,7 @@ public class MyManipulationView2 extends View {
         floorBitmap = bitmap;
     }
 
+    public void refresh(){
+        invalidate();
+    }
 }
