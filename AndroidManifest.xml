@@ -24,15 +24,14 @@
         <activity android:name=".image_manipulation.Image_manipulation_main_activity"/>
 
         <!--the main activity of the time capsule to choose to take a photo or watch the time capsule-->
-        <activity android:name=".time_capsule.Time_capsule_main_activity"/>
 
-        <service android:name=".time_capsule.TimeService">
+        <service android:name=".time_capsule.TimeCapsuleService">
             <intent-filter>
                 <action android:name=".time_capsule.TimeService"/>
             </intent-filter>
         </service>
         <activity
-                android:name=".time_capsule.RecordActivity"
+                android:name=".time_capsule.TimeCapsuleActivity"
                 android:label="@string/app_name"
                 android:theme="@style/CustomTitle">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
