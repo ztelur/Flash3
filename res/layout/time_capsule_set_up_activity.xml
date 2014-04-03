@@ -36,7 +36,8 @@
             android:layout_height="40dp"
             android:id="@+id/time_capsule_detail_content"
             android:background="@color/time_capsule_title_color"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
     </LinearLayout>
 
     <View
