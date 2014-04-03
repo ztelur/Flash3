@@ -1,5 +1,6 @@
 package com.nju.Flash.time_capsule;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
@@ -46,11 +47,20 @@ public class TimeCapsuleActivity extends Activity {
         super.onCreate(savedInstanceState);
         TimeCapsuleActivity.display = getWindowManager().getDefaultDisplay();
 
-        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-        setContentView(R.layout.time_capsule_set_up_activity);
-        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.time_capsule_titlebar);
+        setContent();
 
         startSystemAlbum();
+    }
+
+    private void setContent() {
+        requestWindowFeature(Window.FEATURE_ACTION_BAR);
+        ActionBar actionBar = this.getActionBar();
+        actionBar.setCustomView(R.layout.time_capsule_titlebar);
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowHomeEnabled(false);
+        actionBar.show();
+        setContentView(R.layout.time_capsule_set_up_activity);
     }
 
     private void startSystemAlbum() {
@@ -64,14 +74,15 @@ public class TimeCapsuleActivity extends Activity {
 
         if (requestCode == 2 && resultCode == Activity.RESULT_OK && null != data) {
             initializePhoto(data.getData());
+            initializeComponent();//初始化界面部件
+            check();//检查照片是否已存在相关时间胶囊
+        } else {
+            makeToast("未选择图片");
         }
-
-        initializeComponent();//初始化界面部件
-        check();//检查照片是否已存在相关时间胶囊
     }
 
     private void initializeComponent() {
-        inflater = (LayoutInflater)TimeCapsuleActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater) TimeCapsuleActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE);
 
         openButtonArray = OpenButtonArray.getInstance(this);
         contentManager = ContentManager.getInstance(this);
@@ -88,7 +99,7 @@ public class TimeCapsuleActivity extends Activity {
 
     private void showPhoto() {
         try {
-            photoImageView.setImageURI(Photo.getUri());
+            photoImageView.setImageBitmap(Photo.thumb());
         } catch (NullPointerException e) {
             Toast.makeText(getApplicationContext(), "No photoView", Toast.LENGTH_LONG).show();
             e.printStackTrace();
@@ -178,6 +189,7 @@ public class TimeCapsuleActivity extends Activity {
     public void timePickerDialog() {
         timePickerDialog = new Dialog(this, R.style.FullHeightDialog);
         timePickerDialog.setContentView(R.layout.time_capsule_time_picker_dialog);
+        timePickerDialog.setCanceledOnTouchOutside(false);
 
         final DatePicker datePicker = (DatePicker) timePickerDialog.findViewById(R.id.datePicker);
         final TimePicker timePicker = (TimePicker) timePickerDialog.findViewById(R.id.timePicker);
@@ -210,6 +222,8 @@ public class TimeCapsuleActivity extends Activity {
             @Override
             public void onClick(View v) {
                 exitDialog.dismiss();
+                if (Record.getInstance((TimeCapsuleActivity.this)).isPlaying())
+                    Record.getInstance(TimeCapsuleActivity.this).stop();
                 TimeCapsuleActivity.this.finish();
             }
         });
@@ -230,17 +244,17 @@ public class TimeCapsuleActivity extends Activity {
         Toast.makeText(getBaseContext(), text, Toast.LENGTH_SHORT).show();
     }
 
-    public void changeToView(int flag){
+    public void changeToView(int flag) {
         contentManager.changeToContent(flag);
     }
 
-    public LayoutInflater getInflater(){
+    public LayoutInflater getInflater() {
         return inflater;
     }
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event){
-        if (keyCode == KeyEvent.KEYCODE_BACK ){
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
             exitDialog();
         }
         return false;

@@ -1,11 +1,14 @@
 package com.nju.Flash.time_capsule;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.nju.Flash.R;
@@ -35,15 +38,13 @@ public class ShowTimeCapsuleActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-        setContentView(R.layout.time_cpasule_view_activity);
-        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.time_capsule_titlebar2);
+        setContent();
 
         imageView = (ImageView) findViewById(R.id.timeCapsulePhotoView);
         timeCapsuleView = (TextView)findViewById(R.id.timeCapsuleText);
         title = (TextView)findViewById(R.id.time_capsule_view_title);
 
-        imageView.setImageURI(photoUri);
+        imageView.setImageBitmap(Photo.thumb());
         timeCapsuleView.setText(content[IOHelper.TEXT_CONTENT]);
         title.setText(content[IOHelper.TITLE_CONTENT]);
 
@@ -63,6 +64,18 @@ public class ShowTimeCapsuleActivity extends Activity {
         });
 
         Photo.setActivity(this);
+    }
+
+    private void setContent() {
+        requestWindowFeature(Window.FEATURE_ACTION_BAR);
+        ActionBar actionBar = this.getActionBar();
+        actionBar.setCustomView(R.layout.time_capsule_titlebar2);
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowHomeEnabled(false);
+        actionBar.show();
+        setContentView(R.layout.time_cpasule_view_activity);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     public static void initialize(String name){
@@ -89,5 +102,15 @@ public class ShowTimeCapsuleActivity extends Activity {
         }else{
             record.play();
         }
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if(Record.getInstance(this).isPlaying())
+                Record.getInstance(this).stop();
+            finish();
+        }
+        return false;
     }
 }
